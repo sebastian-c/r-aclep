@@ -1,7 +1,7 @@
 ---
 title       : Showing off R
 subtitle    : June 2013
-author      : Sebastian Campbell and JosÃ© Padarian
+author      : Sebastian Campbell and José Padarian
 logo        : university_sydney_logo.png
 license     : by-nc-nd
 framework   : revealjs       # {io2012, html5slides, shower, dzslides, ...}
