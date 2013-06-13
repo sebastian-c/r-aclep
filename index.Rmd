@@ -77,11 +77,17 @@ Plot soil profiles locations:
 
 <img src="images/processing.png" style="margin:0px auto;display:block">
 
----
+--- &vertical
 
 ## Shiny
 
 <iframe src="http://glimmer.rstudio.com/sebastianc/bulk_density/" width=1024 height=768></iframe>
+
+***
+
+## More Shiny
+
+<iframe src="http://glimmer.rstudio.com/sebastianc/variance_demonstration/" width=1024 height=768></iframe>
 
 ---
 
@@ -96,7 +102,7 @@ surface3d(volc$y, volc$x, volc$z, terrain.colors(max(volcano))[volcano])
 
 ## This presentation!
 
-This presentation was entirely made in R using some useful packages such as [slidify](http://slidify.org). You can look at the source for it on [GitHub](https://github.com/sebastian-c/r-mar2013).
+This presentation was entirely made in R using some useful packages such as [slidify](http://slidify.org). You can look at the source for it on [GitHub](https://github.com/sebastian-c/r-aclep).
 
 ![](images/thispresentation.png)
 
