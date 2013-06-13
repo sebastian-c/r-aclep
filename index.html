@@ -35,16 +35,16 @@
   <h2>googleVis</h2>
   <p>We can make your first plot a lot fancier if we want (hover your mouse over it):</p>
 
-<!-- LineChart generated in R 3.0.1 by googleVis 0.4.3 package -->
+<!-- LineChart generated in R 3.0.0 by googleVis 0.4.3 package -->
 
-<!-- Thu Jun 13 14:13:20 2013 -->
+<!-- Fri Jun 14 09:11:59 2013 -->
 
 <!-- jsHeader -->
 
 <script type="text/javascript">
  
 // jsData 
-function gvisDataLineChartID1a2420d33a23 () {
+function gvisDataLineChartID5a1597544b9 () {
   var data = new google.visualization.DataTable();
   var datajson =
 [
@@ -23933,7 +23933,7 @@ function gvisDataLineChartID1a2420d33a23 () {
 -5.58 
 ],
 [
- null,
+ new Date(2011,2,13,1,0,0),
 -9.65,
 -8.94,
 -8.94,
@@ -91794,8 +91794,8 @@ return(data);
 }
  
 // jsDrawChart
-function drawChartLineChartID1a2420d33a23() {
-  var data = gvisDataLineChartID1a2420d33a23();
+function drawChartLineChartID5a1597544b9() {
+  var data = gvisDataLineChartID5a1597544b9();
   var options = {};
 options["allowHtml"] = true;
 options["width"] =   1000;
@@ -91806,7 +91806,7 @@ options["hAxis"] = {title:'Time'};
 options["title"] = "Alaskan surface soil temperature";
 
      var chart = new google.visualization.LineChart(
-       document.getElementById('LineChartID1a2420d33a23')
+       document.getElementById('LineChartID5a1597544b9')
      );
      chart.draw(data,options);
     
@@ -91830,9 +91830,9 @@ options["title"] = "Alaskan surface soil temperature";
     pkgs.push(chartid);
 
   // Add the drawChart function to the global list of callbacks
-  callbacks.push(drawChartLineChartID1a2420d33a23);
+  callbacks.push(drawChartLineChartID5a1597544b9);
 })();
-function displayChartLineChartID1a2420d33a23() {
+function displayChartLineChartID5a1597544b9() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -91858,12 +91858,12 @@ function displayChartLineChartID1a2420d33a23() {
 
 <!-- jsChart -->  
 
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartLineChartID1a2420d33a23"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartLineChartID5a1597544b9"></script>
  
 
 <!-- divChart -->
 
-<div id="LineChartID1a2420d33a23"
+<div id="LineChartID5a1597544b9"
   style="width: 1000px; height: 500px;">
 </div>
 
@@ -91919,9 +91919,9 @@ surface3d(volc$y, volc$x, volc$z, terrain.colors(max(volcano))[volcano])
 <img src="testglsnapshot.png" alt="testglsnapshot" width=505/><br>
     Your browser does not support the HTML5 canvas element.</canvas></p>
 
-<!-- ****** surface object 518 ****** -->
+<!-- ****** surface object 6 ****** -->
 
-<script id="testglvshader518" type="x-shader/x-vertex">
+<script id="testglvshader6" type="x-shader/x-vertex">
     attribute vec3 aPos;
     attribute vec4 aCol;
     uniform mat4 mvMatrix;
@@ -91939,7 +91939,7 @@ surface3d(volc$y, volc$x, volc$z, terrain.colors(max(volcano))[volcano])
     }
 </script>
 
-<script id="testglfshader518" type="x-shader/x-fragment"> 
+<script id="testglfshader6" type="x-shader/x-fragment"> 
     #ifdef GL_ES
     precision highp float;
     #endif
@@ -92071,11 +92071,11 @@ surface3d(volc$y, volc$x, volc$z, terrain.colors(max(volcano))[volcano])
          }
          image.src = filename;
        }       
-       // ****** surface object 518 ******
-       var prog518  = gl.createProgram();
-       gl.attachShader(prog518, getShader( gl, "testglvshader518" ));
-       gl.attachShader(prog518, getShader( gl, "testglfshader518" ));
-       gl.linkProgram(prog518);
+       // ****** surface object 6 ******
+       var prog6  = gl.createProgram();
+       gl.attachShader(prog6, getShader( gl, "testglvshader6" ));
+       gl.attachShader(prog6, getShader( gl, "testglfshader6" ));
+       gl.linkProgram(prog6);
        var v=new Float32Array([
         10, 10, 500, 0.9019608, 0.8745098, 0.02745098, 1, 0.4472136, 0, -0.8944272,
         20, 10, 505, 0.9019608, 0.8666667, 0.03529412, 1, 0.4472136, 0, -0.8944272,
@@ -97385,9 +97385,9 @@ surface3d(volc$y, volc$x, volc$z, terrain.colors(max(volcano))[volcano])
         860, 610, 470, 0.8627451, 0.8941177, 0, 1, 0, 0, -1,
         870, 610, 470, 0.8627451, 0.8941177, 0, 1, 0, 0, -1
        ]);
-       var posLoc518 = gl.getAttribLocation(prog518, "aPos");
-       var colLoc518 = gl.getAttribLocation(prog518, "aCol");
-       var normLoc518 = gl.getAttribLocation(prog518, "aNorm");
+       var posLoc6 = gl.getAttribLocation(prog6, "aPos");
+       var colLoc6 = gl.getAttribLocation(prog6, "aCol");
+       var normLoc6 = gl.getAttribLocation(prog6, "aNorm");
        var f=new Uint16Array([
         0, 87, 88, 0, 88, 1,
         87, 174, 175, 87, 175, 88,
@@ -102550,15 +102550,15 @@ surface3d(volc$y, volc$x, volc$z, terrain.colors(max(volcano))[volcano])
         5131, 5218, 5219, 5131, 5219, 5132,
         5218, 5305, 5306, 5218, 5306, 5219
        ]);
-       var buf518 = gl.createBuffer();
-       gl.bindBuffer(gl.ARRAY_BUFFER, buf518);
+       var buf6 = gl.createBuffer();
+       gl.bindBuffer(gl.ARRAY_BUFFER, buf6);
        gl.bufferData(gl.ARRAY_BUFFER, v, gl.STATIC_DRAW);
-       var ibuf518 = gl.createBuffer();
-       gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, ibuf518);
+       var ibuf6 = gl.createBuffer();
+       gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, ibuf6);
        gl.bufferData(gl.ELEMENT_ARRAY_BUFFER, f, gl.STATIC_DRAW);
-       var mvMatLoc518 = gl.getUniformLocation(prog518,"mvMatrix");
-       var prMatLoc518 = gl.getUniformLocation(prog518,"prMatrix");
-       var normMatLoc518 = gl.getUniformLocation(prog518,"normMatrix");
+       var mvMatLoc6 = gl.getUniformLocation(prog6,"mvMatrix");
+       var prMatLoc6 = gl.getUniformLocation(prog6,"prMatrix");
+       var normMatLoc6 = gl.getUniformLocation(prog6,"normMatrix");
        gl.enable(gl.DEPTH_TEST);
        gl.depthFunc(gl.LEQUAL);
        gl.clearDepth(1.0);
@@ -102593,19 +102593,19 @@ surface3d(volc$y, volc$x, volc$z, terrain.colors(max(volcano))[volcano])
          normMatrix.scale( 1, 1, 1 );   
          normMatrix.multRight( userMatrix );
          gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
-         // ****** surface object 518 *******
-         gl.useProgram(prog518);
-         gl.bindBuffer(gl.ARRAY_BUFFER, buf518);
-         gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, ibuf518);
-         gl.uniformMatrix4fv( prMatLoc518, false, new Float32Array(prMatrix.getAsArray()) );
-         gl.uniformMatrix4fv( mvMatLoc518, false, new Float32Array(mvMatrix.getAsArray()) );
-         gl.uniformMatrix4fv( normMatLoc518, false, new Float32Array(normMatrix.getAsArray()) );
-         gl.enableVertexAttribArray( posLoc518 );
-         gl.enableVertexAttribArray( colLoc518 );
-         gl.vertexAttribPointer(colLoc518, 4, gl.FLOAT, false, 40, 12);
-         gl.enableVertexAttribArray( normLoc518 );
-         gl.vertexAttribPointer(normLoc518, 3, gl.FLOAT, false, 40, 28);
-         gl.vertexAttribPointer(posLoc518,  3, gl.FLOAT, false, 40,  0);
+         // ****** surface object 6 *******
+         gl.useProgram(prog6);
+         gl.bindBuffer(gl.ARRAY_BUFFER, buf6);
+         gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, ibuf6);
+         gl.uniformMatrix4fv( prMatLoc6, false, new Float32Array(prMatrix.getAsArray()) );
+         gl.uniformMatrix4fv( mvMatLoc6, false, new Float32Array(mvMatrix.getAsArray()) );
+         gl.uniformMatrix4fv( normMatLoc6, false, new Float32Array(normMatrix.getAsArray()) );
+         gl.enableVertexAttribArray( posLoc6 );
+         gl.enableVertexAttribArray( colLoc6 );
+         gl.vertexAttribPointer(colLoc6, 4, gl.FLOAT, false, 40, 12);
+         gl.enableVertexAttribArray( normLoc6 );
+         gl.vertexAttribPointer(normLoc6, 3, gl.FLOAT, false, 40, 28);
+         gl.vertexAttribPointer(posLoc6,  3, gl.FLOAT, false, 40,  0);
          gl.drawElements(gl.TRIANGLES, 30960, gl.UNSIGNED_SHORT, 0);
          gl.flush ();
        }
