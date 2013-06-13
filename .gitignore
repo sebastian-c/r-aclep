@@ -1,3 +1,8 @@
+.cache
+test/
+
 .Rproj.user
 .Rhistory
 .RData
+
+*.md
